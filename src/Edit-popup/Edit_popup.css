@@ -1,0 +1,47 @@
+.list-popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.list-popup.active {
+	display: block;
+}
+
+.list-popup form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 30px 20px;
+	border-radius: 10px;
+	z-index: 10;
+	text-align: center;
+}
+
+.list-popup form input {
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	outline: none;
+	border: 2px solid gray;
+}
+
+.list-popup form button {
+	background-color: lightblue;
+	border-style: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.list-popup form button:hover {
+	background-color: lightskyblue;
+}

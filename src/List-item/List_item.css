@@ -1,0 +1,83 @@
+.list-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	background-color: lightgray;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+}
+
+.list-item-name {
+	width: 33.33%;
+	text-align: center;
+}
+
+.list-item-phone {
+	width: 33.33%;
+	text-align: center;
+}
+
+.list-item-buttons {
+	width: 33.33%;
+	text-align: center;
+}
+
+.list-item-buttons-edit {
+	padding: 5px 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	cursor: pointer;
+	background-color: lightblue;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+}
+
+.list-item-buttons-edit:hover {
+	background-color: gray;
+}
+
+.list-item-buttons-delete {
+	padding: 5px 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	cursor: pointer;
+	background-color: coral;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+}
+
+.list-item-buttons-delete:hover {
+	background-color: red;
+}
+
+@media screen and (max-width: 550px) {
+	.list-item {
+		flex-direction: column;
+	}
+
+	.list-item-name {
+		padding-top: 10px;
+		width: 100%;
+	}
+
+	.list-item-phone {
+		padding-top: 10px;
+		width: 100%;
+	}
+
+	.list-item-buttons {
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	.list-item-buttons-delete,
+	.list-item-buttons-edit {
+		display: inline-block;
+		width: 100%;
+		max-width: 120px;
+		margin-top: 10px;
+	}
+}
